@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--project.-->
+<head>
+    <meta charset="UTF-8">
+    <title>mardi gras</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=Quintessential&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/aa6c7dcfc5.js" crossorigin="anonymous"></script>
+  </head>
+  <body style="height: 2000px;">
+	<header>
+		<div id="logo">Mardi<span id="logo-s">gras</span></div>
+		<span class="sign"><a class="act" href="#">SIGN UP</a></span>
+		<img src="/logo/download.png">
+		<span class="sign"><a href="#">SIGN IN</a></span>
+		<style>
+			
+/* 1 */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+header{
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+	z-index: 2;
+	
+}
+#logo{
+    line-height: 60px;
+    margin-left: 40px;
+    display: inline-block;
+	cursor: pointer;
+	font-size: 30px;
+	font-weight: bold;
+	color: #bbd819; 
+}
+#logo:hover{
+    color: #ebca13; 
+}
+#logo-s{
+	color: #06d406; 
+	margin-left: 5px;
+	font-family:Henny Penny;
+}
+#logo:hover #logo-s{
+	color: #e79e15; 
+}
+.sign{
+	float: right;
+	line-height: 60px;
+	margin-right: 40px;
+	font-family:Henny Penny;
+}
+.sign a{
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+	font-family:Henny Penny;
+}
+.act{
+	border: 2px solid #fff;
+	border-radius: 50px;
+	padding: 6px 15px;
+}
+.sign a:hover{
+	color: #ffa600; 
+	border-color: #ffa600; 
+}
+/* /1 */
+
+/* 2 */
+.slider{
+	position: relative;
+	width: 100%;
+	background: #465a3e; 
+}
+.myslide{
+	height: 655px;
+	display: none;
+	overflow: hidden;
+}
+
+.prev, .next{
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	font-size: 50px;
+	padding: 15px;
+	cursor: pointer;
+	color: rgb(68, 153, 47);
+	transition: 0.1s;
+	user-select: none;
+}
+.prev:hover, .next:hover{
+	color: #459b34; 
+}
+.next{
+	right: 0;
+}
+.dotsbox{
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	bottom: 20px;
+	cursor: pointer;
+}
+.dot{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border: 3px solid rgb(129, 128, 59);
+	border-radius: 50%;
+	margin: 0 10px;
+	cursor: pointer;
+}
+/* /2 */
+
+/* javascript */
+.active, .dot:hover{
+	border-color: #919e49; 
+}
+/* /javascript */
+
+/* muslide add fade */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 5.5s;
+  animation-name: fade;
+  animation-duration: 5.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 0.8}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0.8}
+  to {opacity: 1}
+}
+/* /muslide add fade */
+
+/* 3 */
+.txt{
+	position: absolute;
+	color: rgb(154, 175, 80);
+	letter-spacing: 2px;
+	line-height: 35px;
+	top: 40%;
+	left: 15%;
+	-webkit-animation-name: posi;
+  	-webkit-animation-duration: 2s;
+  	animation-name: posi;
+  	animation-duration: 2s;
+	z-index: 1;
+	font-family:Henny Penny;
+}
+
+@-webkit-keyframes posi {
+  from {left: 25%;}
+  to {left: 15%;}
+}
+
+
+@keyframes posi {
+  from {left: 25%;}
+  to {left: 15%;}
+}
+
+.txt h1{
+	color: #5c9e10; /* blue */
+	font-size: 50px;
+	margin-bottom: 20px;
+	font-family:Henny Penny;
+}
+.txt p{
+	font-weight: bold;
+	font-size: 20px;
+	font-family:Henny Penny;
+}
+/* /3 */
+
+/* 4 */
+img{
+	transform: scale(1.5, 1.5);
+	-webkit-animation-name: zoomin;
+  	-webkit-animation-duration: 40s;
+  	animation-name: zoomin;
+  	animation-duration: 40s;
+}
+@-webkit-keyframes zoomin {
+  from {transform: scale(1, 1);}
+  to {transform: scale(1.5, 1.5);}
+}
+
+
+@keyframes zoomin {
+  from {transform: scale(1, 1);}
+  to {transform: scale(1.5, 1.5);}
+}
+/* /4 */
+
+
+
+/* 5 */
+@media screen and (max-width: 800px){
+	.myslide{
+		height: 500px;
+	}
+	.txt{
+		letter-spacing: 2px;
+		line-height: 25px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-webkit-animation-name: posi2;
+		-webkit-animation-duration: 2s;
+		animation-name: posi2;
+		animation-duration: 2s;
+	}
+
+	@-webkit-keyframes posi2 {
+	  from {top: 35%;}
+	  to {top: 50%;}
+	}
+
+
+	@keyframes posi2 {
+	  from {top: 35%;}
+	  to {top: 50%;}
+	}
+
+	.txt h1{
+		font-size: 40px;
+	}
+	.txt p{
+		font-size: 13px;
+	}
+
+}
+/* /5 */
+
+/* 6 */
+@media screen and (max-width: 520px){
+	.txt h1{
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+	.sign{
+		margin-right: 20px;
+	}
+	.sign a{
+		font-size: 12px;
+	}
+}
+/* /6 */
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+.footer-section {
+  background: #151414;
+  position: relative;
+}
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+.single-cta i {
+  color: #ff5e14;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo img {
+    max-width: 200px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+      color: #7e7e7e;
+  line-height: 28px;
+}
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+.facebook-bg{
+  background: #3B5998;
+}
+.twitter-bg{
+  background: #55ACEE;
+}
+.google-bg{
+  background: #DD4B39;
+}
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #ff5e14;
+}
+.footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+  color: #ff5e14;
+}
+.footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+}
+.subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: #ff5e14;
+    padding: 13px 20px;
+    border: 1px solid #ff5e14;
+    top: 0;
+}
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+.copyright-area{
+  background: #202020;
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.copyright-text p a{
+  color: #ff5e14;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a{
+  color: #ff5e14;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}
+.walkon{
+    font-size: 60px;
+    font-family: 'Henny Penny'; 
+    text-align: center;
+	color:#06d406;
+}
+
+		</style>
+	</header>
+  </body>
+  <h1 class="walkon"> Walk-On's Bistreaux and Bar</h1>
+	
+    <div class="slider">
+		<!-- fade css -->
+		<div class="myslide fade">
+			<div class="txt">
+				<h1>mardi gras</h1>
+				<p>party and<br>dance</p>
+			</div>
+			<img src="/images/walkon1.jpg" style="width: 100%; height: 100%;">
+		</div>
+		
+		<div class="myslide fade">
+			<div class="txt">
+				<h1>mardi gras</h1>
+				<p>have fun<br>and mor fun</p>
+			</div>
+			<img src="/images/walkon2.jpg" style="width: 100%; height: 100%;">
+		</div>
+		
+		<div class="myslide fade">
+			<div class="txt">
+				<h1>mardi gras</h1>
+				<p>no sleeping<br>just drinking and eating</p>
+			</div>
+			<img src="/images/walkon3.webp" style="width: 100%; height: 100%;">
+		</div>
+		
+		<div class="myslide fade">
+			<div class="txt">
+				<h1>the heaven here</h1>
+				<p>be aware<br>you wont get bored</p>
+			</div>
+			<img src="/images/walkon4.jpg" style="width: 100%; height: 100%;">
+		</div>
+		
+		<div class="myslide fade">
+			<div class="txt">
+				<h1>the night is a party</h1>
+				<p>be ready for<br>whats coming</p>
+			</div>
+			<img src="/images/walkon5.jpg" style="width: 100%; height: 100%;">
+		</div>
+		<!-- /fade css -->
+		
+		<!-- onclick js -->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		
+		<div class="dotsbox" style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+			<span class="dot" onclick="currentSlide(4)"></span>
+			<span class="dot" onclick="currentSlide(5)"></span>
+		</div>
+		
+    
+    </div>
+	<footer class="footer-section">
+		<div class="container">
+			<div class="footer-cta pt-5 pb-5">
+				<div class="row">
+					<div class="col-xl-4 col-md-4 mb-30">
+						<div class="single-cta">
+							<i class="fas fa-map-marker-alt"></i>
+							<div class="cta-text">
+								<h4>Find us</h4>
+								<span>1010 Avenue, sw 54321, chandigarh</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-md-4 mb-30">
+						<div class="single-cta">
+							<i class="fas fa-phone"></i>
+							<div class="cta-text">
+								<h4>Call us</h4>
+								<span>9876543210 0</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-md-4 mb-30">
+						<div class="single-cta">
+							<i class="far fa-envelope-open"></i>
+							<div class="cta-text">
+								<h4>Mail us</h4>
+								<span>mail@info.com</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-content pt-5 pb-5">
+				<div class="row">
+					<div class="col-xl-4 col-lg-4 mb-50">
+						<div class="footer-widget">
+							<div class="footer-logo">
+								<a href="index.html"><img src="/logo/download.png" class="img-fluid" alt="logo"></a>
+							</div>
+							<div class="footer-text">
+								<p>The festival season varies from city to city, as some traditions, such as the one in New Orleans, Louisiana, consider Mardi Gras to stretch the entire period from Twelfth Night</p>
+							</div>
+							<div class="footer-social-icon">
+								<span>Follow us</span>
+								<a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+								<a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+								<a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+							</div>
+							
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+						<div class="footer-widget">
+							<div class="footer-widget-heading">
+								<h3>Useful Links</h3>
+							</div>
+							<ul>
+								<li><a href="#">Home</a></li>
+								<li><a href="#">about</a></li>
+								<li><a href="#">services</a></li>
+								<li><a href="#">portfolio</a></li>
+								<li><a href="#">Contact</a></li>
+								<li><a href="#">About us</a></li>
+								<li><a href="#">Our Services</a></li>
+								<li><a href="#">Expert Team</a></li>
+								<li><a href="#">Contact us</a></li>
+								<li><a href="#">Latest News</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+						<div class="footer-widget">
+							<div class="footer-widget-heading">
+								<h3>Subscribe</h3>
+							</div>
+							<div class="footer-text mb-25">
+								
+							</div>
+							<div class="subscribe-form">
+								<form action="#">
+									<input type="text" placeholder="Email Address">
+									<button><i class="fab fa-telegram-plane"></i></button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-6 col-lg-6 text-center text-lg-left">
+						
+						</div>
+					</div>
+					<div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+						<div class="footer-menu">
+							<ul>
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Terms</a></li>
+								<li><a href="#">Privacy</a></li>
+								<li><a href="#">Policy</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	  </footer>
+	
+		  
+    
+    
+   
+    
+  
+      </div>
+    </div>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="/script.js"></script>
+  </body>
+</html>
+

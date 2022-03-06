@@ -1,0 +1,343 @@
+
+
+
+.body {
+    font-family: mHenny Penny;
+  }
+  .navbar-nav a {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  }
+  .navbar-light .navbar-brand {
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family:Henny Penny;
+  }
+  
+  .navbar-light .navbar-brand:focus,
+  .navbar-light .navbar-brand:hover {
+    color: #fff;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: #fff;
+  }
+  .navbar-light .navbar-nav .nav-link:focus,
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: yellow;
+  }
+  
+  .navbar-toggler {
+    padding: 1px 5px;
+    font-size: 18px;
+    line-height: 0.3;
+    background: #fff;
+  }
+  
+  /*  carousel      */
+  
+  .carousel-item {
+    height: 100vh;
+    min-height: 300px;
+  }
+  .bg-1 {
+    background-image: url(/images/mardi4.jpg);
+  }
+  .bg-2 {
+    background-image: url(/images/marde2.jpg);
+  }
+  .bg-3 {
+    background-image: url(/images/mardi3.jpeg);
+  }
+  .bg-1,
+  .bg-2,
+  .bg-3
+   {
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+  
+  .carousel-caption {
+    bottom: 220px;
+    z-index: 2;
+  }
+  .carousel-caption h5 {
+    font-size: 85px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin-top: 25px;
+    font-family: "Henny Penny";
+  }
+  .carousel-caption p {
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+    font-family: "Henny Penny";
+  }
+  
+  .carousel-caption a {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px 20px;
+    display: inline-block;
+    color: #fff;
+    margin-top: 15px;
+    border-radius: 5px;
+  }
+  
+  .carousel-inner:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+  .carousel-indicators {
+    bottom: 65px;
+  }
+  .carousel-indicators button {
+    width: 100px !important;
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .navbar-nav {
+      text-align: center;
+    }
+    .navbar-collapse {
+      background: #fff;
+    }
+    .navbar-collapse .nav-item .nav-link {
+      color: #000;
+    }
+    .carousel-caption {
+      bottom: 350px;
+    }
+    .carousel-caption h5 {
+      font-size: 65px;
+    }
+    .carousel-caption p {
+      font-size: 18px;
+      width: 100%;
+    }
+  
+  @media only screen and (max-width: 767px) {
+    .navbar-nav {
+      text-align: center;
+    }
+    .navbar-collapse .nav-item .nav-link {
+      color: #000;
+    }
+  
+    .carousel-caption {
+      bottom: 165px;
+    }
+    .carousel-caption h5 {
+      font-size: 25px;
+    }
+    .carousel-caption p {
+      font-size: 12px;
+      width: 100%;
+    }
+    .carousel-caption a {
+      padding: 10px 15px;
+      font-size: 15px;
+    }
+    .navbar-collapse {
+      background: #fff;
+    }
+  }
+  .footer1 {
+    background-color: rgb(83, 110, 58);
+  }
+  .about {
+    width: 100%;
+    padding: 78px 0px;
+    background-image: url(/images/mardi11.jpg);
+  }
+  .about img {
+    height: auto;
+    width: 400px;
+  }
+  
+  .about-text {
+    width: 550px;
+  }
+  .main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .about-text h1 {
+    color: rgb(87, 83, 60);
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+  }
+  .about-text h5 {
+    color: rgb(87, 83, 60);
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+  }
+  .about-text p {
+    color: rgb(53, 53, 46);
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+  }
+  button{
+      background-color:darkorange;
+      color:white;
+      text-decoration:none;
+      border: 2px solid transparent;
+      font-weight: bold;
+      padding: 13px 30px;
+      border-radius: 30px;
+      transition: 4s;
+  
+  }
+  button:hover{
+      background: transparent ;
+      border:2px solid darkorange;
+      cursor: pointer;
+  
+  }
+  /*--------media--------*/
+  header{
+      height: 60px;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      z-index: 2;
+  }
+  #logo{
+      line-height: 60px;
+      margin-left: 40px;
+      display: inline-block;
+      cursor: pointer;
+      font-size: 30px;
+      font-weight: bold;
+      color: #aca545;
+      font-family:Henny Penny; /* yellow */
+  }
+  #logo:hover{
+      color: #56cf10; /* green */
+  }
+  #logo-s{
+      color: #fbff0b; /* yellow */
+      margin-left: 5px;
+  }
+  #logo:hover #logo-s{
+      color: #a07c39; /* orange */
+  }
+  .sign{
+      float: right;
+      line-height: 60px;
+      margin-right: 40px;
+  }
+  .sign a{
+      color: rgb(255, 123, 0);
+      font-weight: bold;
+      text-decoration: none;
+  }
+  .act{
+      border: 2px solid #fff;
+      border-radius: 50px;
+      padding: 6px 15px;
+  }
+  .sign a:hover{
+      color: #5dfc01; /*green */
+      border-color: #44f100; /* green */
+  }
+
+  /*------about----*/
+  *{
+    padding: 0%;
+    margin: 0;
+    font-family:'Pattaya'; 
+    box-sizing: border-box;
+  }
+  .about{
+    width:100%;
+    padding: 78px 0px;
+    background-color: rgb(255, 255, 255);
+  }
+  .about img{
+    height: auto;
+    width: 400px;
+
+  }
+  .about text{
+    width:550px;
+
+  }
+  .main{
+    width:1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+
+  }
+  .about-text h1{
+    color: #fff;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+
+  }
+  .about-text h5{
+    color: #fff;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+
+
+  }
+  .about-text p{
+    color: rgb(122, 118, 53);
+    letter-spacing: 1px;
+    line-height: 18px;
+    margin-bottom:45px;
+    
+
+  }
+  button{
+    background:rgb(122, 118, 53);
+    color: #fff;
+    text-decoration: none;
+    border: 2px soild transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+
+  }
+button:hover{
+  background: transparent;
+    border:2px soild rgb(122, 118, 53);
+    cursor: pointer;
+
+
+}
+ 
+
+
+  
+  
+  
+ 

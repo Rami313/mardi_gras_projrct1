@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--project.-->
+<head>
+    <meta charset="UTF-8">
+    <title>mardi gras</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=Quintessential&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/aa6c7dcfc5.js" crossorigin="anonymous"></script>
+<style>ul {
+  margin: 0px;
+  padding: 0px;
+}
+.footer-section {
+background: #151414;
+position: relative;
+}
+.footer-cta {
+border-bottom: 1px solid #373636;
+}
+.single-cta i {
+color: #ff5e14;
+font-size: 30px;
+float: left;
+margin-top: 8px;
+}
+.cta-text {
+padding-left: 15px;
+display: inline-block;
+}
+.cta-text h4 {
+color: #fff;
+font-size: 20px;
+font-weight: 600;
+margin-bottom: 2px;
+}
+.cta-text span {
+color: #757575;
+font-size: 15px;
+}
+.footer-content {
+position: relative;
+z-index: 2;
+}
+.footer-pattern img {
+position: absolute;
+top: 0;
+left: 0;
+height: 330px;
+background-size: cover;
+background-position: 100% 100%;
+}
+.footer-logo {
+margin-bottom: 30px;
+}
+.footer-logo img {
+  max-width: 200px;
+}
+.footer-text p {
+margin-bottom: 14px;
+font-size: 14px;
+    color: #7e7e7e;
+line-height: 28px;
+}
+.footer-social-icon span {
+color: #fff;
+display: block;
+font-size: 20px;
+font-weight: 700;
+font-family: 'Poppins', sans-serif;
+margin-bottom: 20px;
+}
+.footer-social-icon a {
+color: #fff;
+font-size: 16px;
+margin-right: 15px;
+}
+.footer-social-icon i {
+height: 40px;
+width: 40px;
+text-align: center;
+line-height: 38px;
+border-radius: 50%;
+}
+.facebook-bg{
+background: #3B5998;
+}
+.twitter-bg{
+background: #55ACEE;
+}
+.google-bg{
+background: #DD4B39;
+}
+.footer-widget-heading h3 {
+color: #fff;
+font-size: 20px;
+font-weight: 600;
+margin-bottom: 40px;
+position: relative;
+}
+.footer-widget-heading h3::before {
+content: "";
+position: absolute;
+left: 0;
+bottom: -15px;
+height: 2px;
+width: 50px;
+background: #ff5e14;
+}
+.footer-widget ul li {
+display: inline-block;
+float: left;
+width: 50%;
+margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+color: #ff5e14;
+}
+.footer-widget ul li a {
+color: #878787;
+text-transform: capitalize;
+}
+.subscribe-form {
+position: relative;
+overflow: hidden;
+}
+.subscribe-form input {
+width: 100%;
+padding: 14px 28px;
+background: #2E2E2E;
+border: 1px solid #2E2E2E;
+color: #fff;
+}
+.subscribe-form button {
+  position: absolute;
+  right: 0;
+  background: #ff5e14;
+  padding: 13px 20px;
+  border: 1px solid #ff5e14;
+  top: 0;
+}
+.subscribe-form button i {
+color: #fff;
+font-size: 22px;
+transform: rotate(-6deg);
+}
+.copyright-area{
+background: #202020;
+padding: 25px 0;
+}
+.copyright-text p {
+margin: 0;
+font-size: 14px;
+color: #878787;
+}
+.copyright-text p a{
+color: #ff5e14;
+}
+.footer-menu li {
+display: inline-block;
+margin-left: 20px;
+}
+.footer-menu li:hover a{
+color: #ff5e14;
+}
+.footer-menu li a {
+font-size: 14px;
+color: #878787;
+}
+ *{
+    padding: 0%;
+    margin: 0;
+    font-family:'Pattaya'; 
+    box-sizing: border-box;
+  }
+  .about{
+    width:100%;
+    padding: 78px 0px;
+    background-image:url(/images/mardi9.jpg)
+  }
+  .about img{
+    height: auto;
+    width: 400px;
+
+  }
+  .about text{
+    width:550px;
+
+  }
+  .main{
+    width:1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+
+  }
+  .about-text h1{
+    color: rgb(250, 227, 153);
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-family: 'Henny Penny'; 
+    font-weight: 500;
+
+  }
+  .about-text h5{
+    color: rgb(30, 255, 0);
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+
+
+  }
+  .about-text p{
+    color: rgb(232, 241, 236);
+    letter-spacing: 1px;
+    line-height: 18px;
+    margin-bottom:45px;
+    
+
+  }
+  button{
+    background:rgb(122, 118, 53);
+    color: #fff;
+    text-decoration: none;
+    border: 2px soild transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+
+  }
+button:hover{
+  background: transparent;
+    border:2px soild rgb(122, 118, 53);
+    cursor: pointer;
+
+
+}
+
+
+
+</style>
+  </head>
+  <body background="/images/mardi9.jpg"> 
+    <section class="about">
+      <div class="main">
+        <img src="/images/mardddi3.jfif" />
+        <img src="/images/maer12.webp" />
+        <img src="/images/marddd4.webp" />
+        <img src="/images/mardddi3.jfif" />
+        <img src="/images/mard1.jpg" />
+        <img src="/images/maer3.webp" />
+        <div class="about-text">
+          <h1>About LaToya Cantrell</h1>
+          <h5>62nd Mayor of New Orleans</h5>
+          <p>
+            LaToya Cantrell (née Wilder; born April 3, 1972) is an American
+            politician serving as the Mayor of New Orleans, Louisiana since May
+            7, 2018. A Democrat, Cantrell is the first woman to hold the office.
+            Before becoming mayor, Cantrell represented District B on the New
+            Orleans City Council from 2012–2018
+          </p>
+          <button type="button">more info</button>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+        <div class="main">
+          <img src="/images/marddi5.jpg">
+          <img src="/images/marddi6.webp">
+          <img src="/images/mardi7.jpg">
+          <img src="/images/marddi7.jpg.crdownload">
+          <img src="/images/parti1.jfif">
+          <img src="/images/parti2.webp">
+
+        
+          <div class="about-text">
+            <h1>Mardi Gras</h1>
+            <h5>About mardi Gras in New Orleans</h5>
+            <p>
+                The holiday of Mardi Gras is celebrated in all of Louisiana, including the city of New Orleans. Celebrations are concentrated for about two weeks before and through Shrove Tuesday, the day before Ash Wednesday (the start of lent in the Western Christian tradition). Usually there is one major parade each day (weather permitting); many days have several large parades. The largest and most elaborate parades take place the last five days of the Mardi Gras season. In the final week, many events occur throughout New Orleans and surrounding communities, including parades and balls (some of them masquerade balls).
+
+                The parades in New Orleans are organized by social clubs known as krewes; most follow the same parade schedule and route each year. The earliest-established krewes were the Mistick Krewe of Comus, the earliest, Rex, the Knights of Momus and the Krewe of Proteus. Several modern "super krewes" are well known for holding large parades and events, such as the Krewe of Endymion (which is best known for naming celebrities as grand marshals for their parades), the Krewe of Bacchus (similarly known for naming celebrities as their Kings), as well as the Zulu Social Aid & Pleasure Club—a predominantly African American krewe. Float riders traditionally toss throws into the crowds. The most common throws are strings of colorful plastic beads, doubloons, decorated plastic "throw cups", Moon Pies, and small inexpensive toys. Major krewes follow the same parade schedule each year.
+            
+            <button type="button">more info</button>
+            <div></div>
+            <footer class="footer-section">
+              <div class="container">
+                <div class="footer-cta pt-5 pb-5">
+                  <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                      <div class="single-cta">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="cta-text">
+                          <h4>Find us</h4>
+                          <span>1010 Avenue, sw 54321, chandigarh</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                      <div class="single-cta">
+                        <i class="fas fa-phone"></i>
+                        <div class="cta-text">
+                          <h4>Call us</h4>
+                          <span>9876543210 0</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                      <div class="single-cta">
+                        <i class="far fa-envelope-open"></i>
+                        <div class="cta-text">
+                          <h4>Mail us</h4>
+                          <span>mail@info.com</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-content pt-5 pb-5">
+                  <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                      <div class="footer-widget">
+                        <div class="footer-logo">
+                          <a href="index.html"><img src="/logo/download.png" class="img-fluid" alt="logo"></a>
+                        </div>
+                        <div class="footer-text">
+                          <p>The festival season varies from city to city, as some traditions, such as the one in New Orleans, Louisiana, consider Mardi Gras to stretch the entire period from Twelfth Night</p>
+                        </div>
+                        <div class="footer-social-icon">
+                          <span>Follow us</span>
+                          <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                          <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                          <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                      <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                          <h3>Useful Links</h3>
+                        </div>
+                        <ul>
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#">about</a></li>
+                          <li><a href="#">services</a></li>
+                          <li><a href="#">portfolio</a></li>
+                          <li><a href="#">Contact</a></li>
+                          <li><a href="#">About us</a></li>
+                          <li><a href="#">Our Services</a></li>
+                          <li><a href="#">Expert Team</a></li>
+                          <li><a href="#">Contact us</a></li>
+                          <li><a href="#">Latest News</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                      <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                          <h3>Subscribe</h3>
+                        </div>
+                        <div class="footer-text mb-25">
+                          
+                        </div>
+                        <div class="subscribe-form">
+                          <form action="#">
+                            <input type="text" placeholder="Email Address">
+                            <button><i class="fab fa-telegram-plane"></i></button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="copyright-area">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                      
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                      <div class="footer-menu">
+                        <ul>
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#">Terms</a></li>
+                          <li><a href="#">Privacy</a></li>
+                          <li><a href="#">Policy</a></li>
+                          <li><a href="#">Contact</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </footer>
+            
+                
+
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+            <script src="/script.js"></script>
+          </div>
+        </div>
+  </body>
+</html>
